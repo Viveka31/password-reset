@@ -17,7 +17,7 @@ export default function ResetPassword(){
 
       try{
 
-        await axios.get(`http://localhost:5000/api/auth/verify/${token}`);
+        await axios.post(`https://brilliant-basbousa-1f9673.netlify.app.onrender.com/api/auth/reset/${token}`,{password});
 
       }catch(err){
 
@@ -47,10 +47,7 @@ export default function ResetPassword(){
 
   try{
 
-    const res = await axios.post(
-      `http://localhost:5000/api/auth/reset/${token}`,
-      { password }
-    );
+    const res = await axios.post("https://brilliant-basbousa-1f9673.netlify.app.onrender.com/api/auth/forgot",{email});
 
     alert(res.data.message);
 

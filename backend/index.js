@@ -8,10 +8,15 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://brilliant-basbousa-1f9673.netlify.app"
+}));
 app.use(express.json());
 
 connectDB();
+app.get("/", (req,res)=>{
+  res.send("Password Reset API Running");
+});
 
 app.use("/api/auth", authRoutes);
 

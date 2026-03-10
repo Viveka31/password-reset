@@ -18,10 +18,7 @@ export default function ForgotPassword() {
 
       setLoading(true);   // 👈 start loading
 
-      const res = await axios.post(
-        "http://localhost:5000/api/auth/forgot",
-        { email }
-      );
+      const res = await axios.post("https://brilliant-basbousa-1f9673.netlify.app.onrender.com/api/auth/forgot",{email});
 
       alert(res.data.message);
 

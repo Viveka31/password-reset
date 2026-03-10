@@ -29,7 +29,7 @@ export const forgotPassword = async (req, res) => {
 
   console.log("Password updated for:", user.email);
 
-  const resetLink = `http://localhost:5173/reset/${token}`;
+ const resetLink = `https://brilliant-basbousa-1f9673.netlify.app/reset/${token}`;
 
   console.log("Reset Link:", resetLink);   // 👈 added for demo
 
