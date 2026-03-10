@@ -17,7 +17,7 @@ export default function ResetPassword(){
 
       try{
 
-        await axios.post(`https://brilliant-basbousa-1f9673.netlify.app.onrender.com/api/auth/reset/${token}`,{password});
+        await axios.post(`https://password-reset-gdo3.onrender.com/api/auth/reset/${token}`,{password});
 
       }catch(err){
 
@@ -47,7 +47,7 @@ export default function ResetPassword(){
 
   try{
 
-    const res = await axios.post("https://brilliant-basbousa-1f9673.netlify.app.onrender.com/api/auth/forgot",{email});
+    const res = await axios.post("https://password-reset-gdo3.onrender.com/api/auth/forgot",{email});
 
     alert(res.data.message);
 
