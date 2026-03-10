@@ -1,0 +1,16 @@
+body{
+  background: linear-gradient(135deg,#1d2671,#c33764);
+  min-height:100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* keep card styling */
+.card{
+  border:none;
+  border-radius:15px;
+}
+
+.btn-primary{
+  border-radius:8px;
+  font-weight:500;
+}
